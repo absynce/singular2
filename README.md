@@ -18,4 +18,4 @@ Every time you start coding, run the following command:
     tsc --watch -m commonjs -t es5 --emitDecoratorMetadata app.ts
 
 **Note:** You might have to remove `C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\`
-from the `PATH` environment variable.
+from the `PATH` environment variable in order to run the correct version of the TypeScript compiler.
