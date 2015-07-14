@@ -1,0 +1,28 @@
+{
+  "name": "singular2",
+  "version": "0.0.0",
+  "homepage": "https://github.com/absynce/singular2",
+  "authors": [
+    "Jared M. Smith <absynce@gmail.com>"
+  ],
+  "description": "Angular 2 Demo Application",
+  "main": "index.html",
+  "keywords": [
+    "angular",
+    "ng",
+    "demo",
+    "angular2"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "traceur-runtime": "~0.0.90",
+    "system.js": "~0.16.11"
+  }
+}

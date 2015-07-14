@@ -7,17 +7,16 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="/bower_components/traceur-runtime/traceur-runtime.js"></script>
+    <script src="https://jspm.io/system@0.16.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-alpha.28/angular2.dev.js"></script>
+    <script src="/config.js"></script>
+    </script>
   </head>
   <body>
     <div id="container">
       <div id="content">
-        <header>
-          <h1>
-            <span class="title">SingulaR 2</span>
-            <span class="divider">|</span>
-            <span class="subtitle">Static Page</span>
-          </h1>
-        </header>
+        <snglr-header>Loading...</snglr-header>
         <div id="main">
           <p>I sure wish there was something moar to this.</p>
         </div>
@@ -27,4 +26,5 @@
       <div class="copy-left">Copyleft &copy; Jared M. Smith</div>
     </footer>
   </body>
+  <script>System.import('app');</script>
 </html>
