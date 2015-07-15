@@ -35,15 +35,15 @@ class SingularHeader{
 @View({
   template:
         `<div class="profile">
-            <h2>{{ profile.firstName }}</h2>
-            <h3>{{ profile.lastName }}</h3>
+            <h2>{{ firstName }}</h2>
+            <h3>{{ lastName }}</h3>
             <dl class="profile-details">
               <dt><label>Favorite language</label></dt>
-              <dd>{{ profile.favoriteLanguage }}</dd>
+              <dd>{{ favoriteLanguage }}</dd>
               <dt><label>Favorite framework</label></dt>
-              <dd>{{ profile.favoriteFramework }}</dd>
+              <dd>{{ favoriteFramework }}</dd>
               <dt><label>Coding since</label></dt>
-              <dd>{{ profile.codingSince | date:'yyyy' }}</dd>
+              <dd>{{ codingSince | date:'yyyy' }}</dd>
             </dl>
           </div>`
 })
