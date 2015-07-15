@@ -28,4 +28,42 @@ class SingularHeader{
   }
 }
 
+// Annotation section
+@Component({
+  selector: 'snglr-profile' // Defines the <singlr-profile></singlr-profile> tag
+})
+@View({
+  template:
+        `<div class="profile">
+            <h2>{{ profile.firstName }}</h2>
+            <h3>{{ profile.lastName }}</h3>
+            <dl class="profile-details">
+              <dt><label>Favorite language</label></dt>
+              <dd>{{ profile.favoriteLanguage }}</dd>
+              <dt><label>Favorite framework</label></dt>
+              <dd>{{ profile.favoriteFramework }}</dd>
+              <dt><label>Coding since</label></dt>
+              <dd>{{ profile.codingSince | date:'yyyy' }}</dd>
+            </dl>
+          </div>`
+})
+
+// Component controller
+class SingularProfile {
+  firstName: string;
+  lastName: string;
+  favoriteLanguage: string;
+  favoriteFramework: string;
+  codingSince: Date;
+
+  constructor() {
+    this.firstName         = 'Michael';
+    this.lastName          = 'Owen';
+    this.favoriteLanguage  = 'C#';
+    this.favoriteFramework = 'Angular 1.x';
+    this.codingSince       = new Date(2011, 08, 17);
+  }
+}
+
 bootstrap(SingularHeader);
+bootstrap(SingularProfile);
