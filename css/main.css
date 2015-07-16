@@ -139,6 +139,23 @@ footer {
 }
 .copy-left:hover { transform: rotateY(360deg); }
 
+dl.profile-details {
+  padding: 15px;
+}
+
+dl.profile-details dt {
+  clear: left;
+  float: left;
+  opacity: 0.9;
+  padding-right: 15px;
+  text-align: right;
+  width: 150px;
+}
+
+dl.profile-details dd { font-weight: bold; }
+
+dl.profile-details dt:after { content: ":"; }
+
 
 
 
