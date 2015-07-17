@@ -143,6 +143,7 @@ dl.profile-details {
   padding: 15px;
 }
 
+dl.profile-details dd, dl.profile-details dt, dl.profile-details li { padding: 10px; }
 dl.profile-details dt {
   clear: left;
   float: left;
@@ -151,10 +152,19 @@ dl.profile-details dt {
   text-align: right;
   width: 150px;
 }
-
-dl.profile-details dd { font-weight: bold; }
+dl.profile-details dd { font-weight: bold; padding-bottom: 10px; }
 
 dl.profile-details dt:after { content: ":"; }
+
+.languages {
+  margin-left: 140px;
+  padding-left: 15px;
+  list-style: none;
+}
+
+.languages li:first-of-type { padding-top: 0; }
+.languages .odd-row { background-color: rgba(233, 233, 233, 0.9) }
+
 
 
 

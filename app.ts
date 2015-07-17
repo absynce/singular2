@@ -2,7 +2,7 @@
 /// <reference path="typings/es6-promise/es6-promise.d.ts" />
 /// <reference path="typings/rx/rx.d.ts"/>
 
-import {Component, View, bootstrap} from 'angular2/angular2';
+import {Component, View, bootstrap, NgFor, CSSClass} from 'angular2/angular2';
 
 // Annotation section
 @Component({
@@ -44,8 +44,15 @@ class SingularHeader{
               <dd>{{ favoriteFramework }}</dd>
               <dt><label>Coding since</label></dt>
               <dd>{{ codingSince | date:'yyyy' }}</dd>
+              <dt>Languages</dt>
+              <dd>
+                <ul class="languages">
+                  <li *ng-for="#lang of languages; #i = index" [class]="{ oddRow: i % 2 }">{{ lang }}</li>
+                </ul>
+              </dd>
             </dl>
-          </div>`
+          </div>`,
+  directives: [NgFor, CSSClass]
 })
 
 // Component controller
@@ -55,6 +62,7 @@ class SingularProfile {
   favoriteLanguage: string;
   favoriteFramework: string;
   codingSince: Date;
+  languages: [string];
 
   constructor() {
     this.firstName         = 'Michael';
@@ -62,6 +70,13 @@ class SingularProfile {
     this.favoriteLanguage  = 'C#';
     this.favoriteFramework = 'Angular 1.x';
     this.codingSince       = new Date(2011, 08, 17);
+    this.languages         = [
+                                'C#',
+                                'JavaScript',
+                                'SQL',
+                                'Engrish'
+                              ];
+
   }
 }
 
