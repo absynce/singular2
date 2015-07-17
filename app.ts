@@ -24,7 +24,7 @@ class SingularHeader{
   title: string;
 
   constructor() {
-    this.title = 'Index';
+    this.title = 'Developer profile';
   }
 }
 
