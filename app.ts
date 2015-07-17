@@ -47,7 +47,7 @@ class SingularHeader{
               <dt>Languages</dt>
               <dd>
                 <ul class="languages">
-                  <li *ng-for="#lang of languages; #i = index" [class]="{ oddRow: i % 2 }">{{ lang }}</li>
+                  <li template="ng-for #lang of languages; #i = index" [class.odd-row]="i % 2">{{ lang }}</li>
                 </ul>
               </dd>
             </dl>
