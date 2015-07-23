@@ -1,0 +1,18 @@
+<div class="profile">
+  <h2>{{ firstName }}</h2>
+  <h3>{{ lastName }}</h3>
+  <dl class="profile-details">
+    <dt><label>Favorite language</label></dt>
+    <dd>{{ favoriteLanguage }}</dd>
+    <dt><label>Favorite framework</label></dt>
+    <dd>{{ favoriteFramework }}</dd>
+    <dt><label>Coding since</label></dt>
+    <dd>{{ codingSince | date:'yyyy' }}</dd>
+    <dt>Languages</dt>
+    <dd>
+      <ul class="languages">
+        <li template="ng-for #lang of languages; #i = index" [class.odd-row]="i % 2">{{ lang }}</li>
+      </ul>
+    </dd>
+  </dl>
+</div>

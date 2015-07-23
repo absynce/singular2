@@ -18,7 +18,9 @@
         "!./bower_components/**/*"
     ],
     "files": [
-        "./app.ts",
+        "./app/app.module.ts",
+        "./app/components/profile/profile.component.ts",
+        "./app/shared/header/header.component.ts",
         "./typings/angular2/angular2.d.ts",
         "./typings/es6-promise/es6-promise.d.ts",
         "./typings/rx/rx-lite.d.ts",
